@@ -13,6 +13,6 @@
   "devDependencies": {
     "@shd101wyy/mume": "^0.5.7",
     "ajv": "^6.10.2",
-    "handlebars": "^4.7.6"
+    "handlebars": "^4.7.7"
   }
 }
