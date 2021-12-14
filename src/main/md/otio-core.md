@@ -771,7 +771,7 @@ _EXAMPLE 2_: Example values include: `"Blur"`, `"Crop"`, `"Flip"`.
         "metadata" : { "$ref": "#/definitions/MetadataObject" },
         "effect_name" : { "$ref": "#/definitions/NullableString" }
       },
-      "require" : ["OTIO_SCHEMA"],
+      "required" : ["OTIO_SCHEMA"],
       "additionalProperties": false
     },
     { "$ref": "#/definitions/TimeEffect" }
@@ -815,7 +815,7 @@ Effect <|-- TimeEffect
         "metadata" : { "$ref": "#/definitions/MetadataObject" },
         "effect_name" : { "$ref": "#/definitions/NullableString" }
       },
-      "require" : ["OTIO_SCHEMA"],
+      "required" : ["OTIO_SCHEMA"],
       "additionalProperties": false
     },
     { "$ref": "#/definitions/FreezeFrame" },
@@ -870,7 +870,7 @@ _EXAMPLE_: `timescalar = 2.0` means double speed, and `timescalar = 0.5` means h
     "effect_name" : { "$ref": "#/definitions/NullableString" },
     "time_scalar" : { "$ref": "#/definitions/NullableDouble" }
   },
-  "require" : ["OTIO_SCHEMA"],
+  "required" : ["OTIO_SCHEMA"],
   "additionalProperties": false
 }
 ```
