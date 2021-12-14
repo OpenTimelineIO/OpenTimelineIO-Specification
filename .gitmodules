@@ -1,0 +1,3 @@
+[submodule "lib/otio"]
+	path = lib/otio
+	url = https://github.com/PixarAnimationStudios/OpenTimelineIO.git
