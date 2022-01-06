@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "title": "Schema for the OpenTimelineIO interchange format",
+  "$ref": "#/definitions/SerializableObject",
+  "definitions": {
+    {{#each this}}
+    {{this}}
+    {{#unless @last}},{{/unless}}
+    {{/each}}
+  }
+}
