@@ -11,23 +11,24 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - run: sudo apt-get install graphviz
-    - uses: actions/checkout@v2
+    - name: Setup Graphviz
+      uses: ts-graphviz/setup-graphviz@v2
+    - uses: actions/checkout@v4
       with:
         submodules: 'recursive'
-    - uses: actions/setup-node@v2
+    - uses: actions/setup-node@v4
       with:
         node-version: '10'
     - run: |
         npm install
         npm run build
-    - uses: actions/upload-artifact@v2
+    - uses: actions/upload-artifact@v4
       with:
         name: documentation
         path: |
           build/
           !build/otio.schema.json
-    - uses: actions/upload-artifact@v2
+    - uses: actions/upload-artifact@v4
       with:
         name: json-schmea
         path: build/otio.schema.json
